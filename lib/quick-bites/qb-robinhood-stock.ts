@@ -35,31 +35,68 @@ const robinhoodStock: QuickBiteData = {
       caption: "Outstanding tokenized stock USD value by Robinhood on Arbitrum One.",
     }),
     "```",
+
     "```chart",
     JSON.stringify({
-      type: "column",
+      type: "line",
       title: "Stock Value vs Supply",
       subtitle: "test",
       stacking: "normal",
       showXAsDate: true,
+      filterBy: "stock-filter",
       dataAsJson: {
         meta: [
           {
             name: "Tokenized Stock",
             color: "#00C805",
-            xIndex: 1,
-            yIndex: 0,
+            xIndex: 0,
+            yIndex: 1,
             suffix: null,
             prefix: '$',
             tooltipDecimals: 2,
             url: "https://api.growthepie.xyz/v1/quick-bites/robinhood_daily.json",
-            pathToData: "data.AAPL.daily.values",
+            pathToData: "data.HOOD.daily.values",
+          },
+          {
+            name: "Tokenized Stock",
+            color: "#00C805",
+            xIndex: 0,
+            yIndex: 2,
+            suffix: null,
+            prefix: '$',
+            tooltipDecimals: 2,
+            url: "https://api.growthepie.xyz/v1/quick-bites/robinhood_daily.json",
+            pathToData: "data.HOOD.daily.values",
           }
         ],
       },
       height: 400,
       caption: "blablabla...",
-    }),
+    },
+    {type: "column",
+      title: "Stock Value vs Supply",
+      subtitle: "test",
+      stacking: "normal",
+      showXAsDate: true,
+      filterBy: "stock-filter",
+      dataAsJson: {
+        meta: [
+          {
+            name: "Tokenized Stock",
+            color: "#00C805",
+            xIndex: 0,
+            yIndex: 2,
+            suffix: null,
+            prefix: '$',
+            tooltipDecimals: 2,
+            url: "https://api.growthepie.xyz/v1/quick-bites/robinhood_daily.json",
+            pathToData: "data.HOOD.daily.values",
+          }
+        ],
+      },
+      height: 400,
+      caption: "blablabla...",}
+  ),
     "```",
 
   ],
