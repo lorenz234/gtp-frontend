@@ -92,6 +92,13 @@ const Agents: QuickBiteData = createQuickBite({
           isNumeric: false,
           sortByValue: false,
         },
+        safe_uri: {
+          label: "URI Pinned",
+          type: "boolean",
+          minWidth: 80,
+          isNumeric: false,
+          sortByValue: false,
+        },
         feedback_count_valid: {
           label: "Valid Reviews",
           type: "number",
@@ -141,6 +148,7 @@ const Agents: QuickBiteData = createQuickBite({
         "agent",
         "origin_key",
         "x402_support",
+        "safe_uri",
         "endpoints",
         "feedback_count_valid",
         "unique_clients",
